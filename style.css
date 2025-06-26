@@ -1,82 +1,23 @@
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    background-color: #fdfdfd;
-    transition: all 0.3s ease;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f8f8;
+  text-align: center;
 }
 header {
-    background: linear-gradient(to right, #4CAF50, #81C784);
-    color: white;
-    padding: 1.2rem;
-    text-align: center;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+  background-color: #2e7d32;
+  color: white;
+  padding: 1em;
+  border-radius: 0 0 20px 20px;
 }
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.6rem;
-    background-color: #f1f8e9;
-    padding: 1rem;
-}
-nav button {
-    padding: 0.8rem 1.4rem;
-    font-size: 1rem;
-    border: none;
-    border-radius: 15px;
-    background-color: #A5D6A7;
-    color: #1b5e20;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-nav button:hover {
-    background-color: #81C784;
-}
-#content {
-    padding: 2rem;
-    text-align: center;
-}
-footer {
-    position: fixed;
-    bottom: 15px;
-    right: 15px;
-}
-#goToCart {
-    padding: 1rem;
-    font-size: 1.4rem;
-    border-radius: 50%;
-    background-color: #f44336;
-    color: white;
-    border: none;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    position: relative;
-}
-#goToCart #cartCount {
-    position: absolute;
-    top: -8px;
-    right: -8px;
-    background: red;
-    color: white;
-    font-size: 0.8rem;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#cartArea {
-    display: none;
-    padding: 2rem;
-    background-color: #fff;
-}
-#clearCart {
-    padding: 0.6rem 1.2rem;
-    border-radius: 12px;
-    background-color: #ef5350;
-    color: white;
-    border: none;
-    margin-top: 1rem;
-    cursor: pointer;
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 1em 2em;
+  font-size: 16px;
+  margin-top: 2em;
+  cursor: pointer;
 }

@@ -1,0 +1,1 @@
+console.log("Hasbahçe QR sistemi yüklendi.");
