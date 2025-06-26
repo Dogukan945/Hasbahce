@@ -100,3 +100,21 @@ const now = new Date();
 if (now.getHours() >= 12 && now.getHours() < 13) {
     document.getElementById("mealInfo").textContent = "Bugünün yemeği: Etli Nohut + Pilav (200 TL)";
 }
+
+function updateCartIcon() {
+    const cart = JSON.parse(localStorage.getItem("cart") || "[]");
+    const count = cart.reduce((total, item) => total + item.qty, 0);
+    const badge = document.getElementById("cart-badge");
+    if (badge) {
+        badge.innerText = count;
+        badge.style.display = count > 0 ? "block" : "none";
+    }
+}
+
+// Sepete ekledikten sonra çağır
+const originalAddToCart = addToCart;
+addToCart = function(name, price) {
+    originalAddToCart(name, price);
+    updateCartIcon();
+}
+window.onload = updateCartIcon;

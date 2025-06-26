@@ -78,3 +78,33 @@ img {
     width: 100%;
     border-radius: 8px;
 }
+
+/* Sepet butonu yuvarlak */
+#cart-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ffa500;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 60px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+/* Sepetteki ürün sayısı */
+#cart-badge {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    display: none;
+}
