@@ -1,33 +1,37 @@
 body {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
-    background-color: #f9f9f9;
+    background-color: #fdfdfd;
+    transition: all 0.3s ease;
 }
 header {
-    background-color: #388e3c;
+    background: linear-gradient(to right, #4CAF50, #81C784);
     color: white;
-    padding: 1rem;
+    padding: 1.2rem;
     text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 nav {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    justify-content: center;
+    gap: 0.6rem;
+    background-color: #f1f8e9;
     padding: 1rem;
-    background-color: #e0e0e0;
 }
 nav button {
-    padding: 0.8rem 1.2rem;
+    padding: 0.8rem 1.4rem;
     font-size: 1rem;
-    border-radius: 10px;
     border: none;
-    background-color: #66bb6a;
-    color: white;
+    border-radius: 15px;
+    background-color: #A5D6A7;
+    color: #1b5e20;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 nav button:hover {
-    background-color: #558b2f;
+    background-color: #81C784;
 }
 #content {
     padding: 2rem;
@@ -35,16 +39,44 @@ nav button:hover {
 }
 footer {
     position: fixed;
-    bottom: 10px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    bottom: 15px;
+    right: 15px;
 }
 #goToCart {
     padding: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     border-radius: 50%;
     background-color: #f44336;
     color: white;
     border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    position: relative;
+}
+#goToCart #cartCount {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: red;
+    color: white;
+    font-size: 0.8rem;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#cartArea {
+    display: none;
+    padding: 2rem;
+    background-color: #fff;
+}
+#clearCart {
+    padding: 0.6rem 1.2rem;
+    border-radius: 12px;
+    background-color: #ef5350;
+    color: white;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
 }
