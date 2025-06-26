@@ -111,10 +111,11 @@ function updateCartIcon() {
     }
 }
 
-// Sepete ekledikten sonra çağır
+// Sepete ekleme sonrası ikon güncelle
 const originalAddToCart = addToCart;
 addToCart = function(name, price) {
     originalAddToCart(name, price);
     updateCartIcon();
 }
+
 window.onload = updateCartIcon;

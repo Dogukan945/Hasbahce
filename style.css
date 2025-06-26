@@ -1,5 +1,4 @@
 
-/* Yeni font ve temel stil */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -31,7 +30,7 @@ header.patterned {
     width: 80%;
     margin: 20px auto;
     padding: 15px;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     background-color: #ffa500;
     color: white;
     border-radius: 12px;
@@ -79,7 +78,7 @@ img {
     border-radius: 8px;
 }
 
-/* Sepet butonu yuvarlak */
+/* Sepet butonu */
 #cart-button {
     position: fixed;
     bottom: 20px;
@@ -89,7 +88,7 @@ img {
     border-radius: 50%;
     background-color: #ffa500;
     color: white;
-    font-size: 20px;
+    font-size: 26px;
     text-align: center;
     line-height: 60px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -99,11 +98,11 @@ img {
 /* Sepetteki ürün sayısı */
 #cart-badge {
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 4px;
+    right: 4px;
     background-color: red;
     color: white;
-    font-size: 12px;
+    font-size: 14px;
     padding: 2px 6px;
     border-radius: 50%;
     display: none;
