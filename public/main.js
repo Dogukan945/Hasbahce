@@ -17,7 +17,7 @@ function addToCart(name, price) {
     const qty = qtyMap[name] || 1;
     const table = document.getElementById('tableInput')?.value;
     if (!table) {
-        alert('Lütfen masa numarası giriniz');
+        
         return;
     }
     const existing = cart.find(item => item.name === name);
