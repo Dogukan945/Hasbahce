@@ -1,1 +1,28 @@
-<!DOCTYPE html><html><head><title>Hasbahçe</title></head><body><h1>Hasbahçe Cafe Restaurant</h1></body></html>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Hasbahçe Cafe Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Hasbahçe Cafe Restaurant</h1>
+    </header>
+    <nav id="categories">
+        <button onclick="showCategory('pide')">Pideler</button>
+        <button onclick="showCategory('kebap')">Kebaplar</button>
+        <button onclick="showCategory('icecek')">İçecekler</button>
+        <button onclick="showCategory('tatli')">Tatlılar</button>
+        <button onclick="showCategory('gunluk')">Günün Menüsü</button>
+        <button onclick="showCategory('atistirmalik')">Atıştırmalıklar</button>
+    </nav>
+    <main id="content">
+        <p>Bir kategori seçin...</p>
+    </main>
+    <footer>
+        <button id="goToCart" onclick="openCart()">🛒 Sepete Git</button>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
