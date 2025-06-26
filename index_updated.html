@@ -10,10 +10,10 @@
 <body>
   <header class="patterned">
     <h1>Hasbahçe Cafe Restaurant</h1>
-    <input type="text" id="tableInput" placeholder="Masa numarası giriniz">
+    <div id="tableDisplay" class="table-display">Masa Numaranız: 1</div>
   </header>
   <div class="content">
-<div class="category-box" onclick="toggleCategory('Kebaplar')">Kebaplar</div><div class="grid" id="Kebaplar" style="display:none;">
+<div class="category-box stacked" onclick="toggleCategory('Kebaplar')">Kebaplar</div><div class="grid" id="Kebaplar" style="display:none;">
         <div class="card">
             <img src="https://via.placeholder.com/150" alt="Adana Kebap">
             <h3>Adana Kebap</h3>
@@ -46,7 +46,7 @@
               <button onclick="increaseQty('Beyti')">+</button>
             </div>
             <button onclick="addToCart('Beyti', 300)">Sepete Ekle</button>
-        </div></div><div class="category-box" onclick="toggleCategory('Pideler')">Pideler</div><div class="grid" id="Pideler" style="display:none;">
+        </div></div><div class="category-box stacked" onclick="toggleCategory('Pideler')">Pideler</div><div class="grid" id="Pideler" style="display:none;">
         <div class="card">
             <img src="https://via.placeholder.com/150" alt="Kıymalı Pide">
             <h3>Kıymalı Pide</h3>
@@ -79,7 +79,7 @@
               <button onclick="increaseQty('Karışık Pide')">+</button>
             </div>
             <button onclick="addToCart('Karışık Pide', 300)">Sepete Ekle</button>
-        </div></div><div class="category-box" onclick="toggleCategory('Gözleme Çeşitleri')">Gözleme Çeşitleri</div><div class="grid" id="Gözleme Çeşitleri" style="display:none;">
+        </div></div><div class="category-box stacked" onclick="toggleCategory('Gözleme Çeşitleri')">Gözleme Çeşitleri</div><div class="grid" id="Gözleme Çeşitleri" style="display:none;">
         <div class="card">
             <img src="https://via.placeholder.com/150" alt="Kaşarlı Gözleme">
             <h3>Kaşarlı Gözleme</h3>
@@ -134,7 +134,7 @@
               <button onclick="increaseQty('Yağlı Gözleme')">+</button>
             </div>
             <button onclick="addToCart('Yağlı Gözleme', 200)">Sepete Ekle</button>
-        </div></div><div class="category-box" onclick="toggleCategory('Tatlılar')">Tatlılar</div><div class="grid" id="Tatlılar" style="display:none;">
+        </div></div><div class="category-box stacked" onclick="toggleCategory('Tatlılar')">Tatlılar</div><div class="grid" id="Tatlılar" style="display:none;">
         <div class="card">
             <img src="https://via.placeholder.com/150" alt="Künefe">
             <h3>Künefe</h3>
@@ -178,7 +178,7 @@
               <button onclick="increaseQty('Dondurmalı Kızarmış Kadayıf')">+</button>
             </div>
             <button onclick="addToCart('Dondurmalı Kızarmış Kadayıf', 200)">Sepete Ekle</button>
-        </div></div><div class="category-box" onclick="toggleCategory('İçecekler')">İçecekler</div><div class="grid" id="İçecekler" style="display:none;">
+        </div></div><div class="category-box stacked" onclick="toggleCategory('İçecekler')">İçecekler</div><div class="grid" id="İçecekler" style="display:none;">
         <div class="card">
             <img src="https://via.placeholder.com/150" alt="Ayran">
             <h3>Ayran</h3>
@@ -244,7 +244,7 @@
               <button onclick="increaseQty('Su')">+</button>
             </div>
             <button onclick="addToCart('Su', 15)">Sepete Ekle</button>
-        </div></div><div class="category-box" onclick="toggleCategory('Atıştırmalıklar')">Atıştırmalıklar</div><div class="grid" id="Atıştırmalıklar" style="display:none;">
+        </div></div><div class="category-box stacked" onclick="toggleCategory('Atıştırmalıklar')">Atıştırmalıklar</div><div class="grid" id="Atıştırmalıklar" style="display:none;">
         <div class="card">
             <img src="https://via.placeholder.com/150" alt="Çekirdek">
             <h3>Çekirdek</h3>
