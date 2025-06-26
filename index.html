@@ -1,19 +1,181 @@
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hasbahçe Cafe Restaurant</title>
-  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
   <header>
     <h1>Hasbahçe Cafe Restaurant</h1>
+    <p>QR Menü Sipariş Sistemi</p>
   </header>
-  <main>
-    <p>Menümüzü görmek için QR kodu okutun veya aşağıdan kategorileri seçin.</p>
-    <button onclick="alert('Sipariş sistemine hoş geldiniz!')">Sipariş Ver</button>
-  </main>
-  <script src="main.js?v=3"></script>
+  <div class="content">
+<h2>Kebaplar</h2><div class="grid">
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Adana Kebap">
+            <h3>Adana Kebap</h3>
+            <p>300 TL</p>
+            <button onclick="addToCart('Adana Kebap', 300)">Sepete Ekle</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Urfa Kebap">
+            <h3>Urfa Kebap</h3>
+            <p>300 TL</p>
+            <button onclick="addToCart('Urfa Kebap', 300)">Sepete Ekle</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Beyti">
+            <h3>Beyti</h3>
+            <p>300 TL</p>
+            <button onclick="addToCart('Beyti', 300)">Sepete Ekle</button>
+        </div></div><h2>Pideler</h2><div class="grid">
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Kıymalı Pide">
+            <h3>Kıymalı Pide</h3>
+            <p>280 TL</p>
+            <button onclick="addToCart('Kıymalı Pide', 280)">Sepete Ekle</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Kaşarlı Pide">
+            <h3>Kaşarlı Pide</h3>
+            <p>280 TL</p>
+            <button onclick="addToCart('Kaşarlı Pide', 280)">Sepete Ekle</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Karışık Pide">
+            <h3>Karışık Pide</h3>
+            <p>300 TL</p>
+            <button onclick="addToCart('Karışık Pide', 300)">Sepete Ekle</button>
+        </div></div><h2>Gözleme Çeşitleri</h2><div class="grid">
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Kaşarlı Gözleme">
+            <h3>Kaşarlı Gözleme</h3>
+            <p>180 TL</p>
+            <button onclick="addToCart('Kaşarlı Gözleme', 180)">Sepete Ekle</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Çökelekli Gözleme">
+            <h3>Çökelekli Gözleme</h3>
+            <p>180 TL</p>
+            <button onclick="addToCart('Çökelekli Gözleme', 180)">Sepete Ekle</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Patatesli Gözleme">
+            <h3>Patatesli Gözleme</h3>
+            <p>180 TL</p>
+            <button onclick="addToCart('Patatesli Gözleme', 180)">Sepete Ekle</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Kaşarlı Patatesli Gözleme">
+            <h3>Kaşarlı Patatesli Gözleme</h3>
+            <p>180 TL</p>
+            <button onclick="addToCart('Kaşarlı Patatesli Gözleme', 180)">Sepete Ekle</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Yağlı Gözleme">
+            <h3>Yağlı Gözleme</h3>
+            <p>200 TL</p>
+            <button onclick="addToCart('Yağlı Gözleme', 200)">Sepete Ekle</button>
+        </div></div><h2>Tatlılar</h2><div class="grid">
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Künefe">
+            <h3>Künefe</h3>
+            <p>200 TL</p>
+            <button onclick="addToCart('Künefe', 200)">Sepete Ekle</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Kadayıf">
+            <h3>Kadayıf</h3>
+            <p>200 TL</p>
+            <button onclick="addToCart('Kadayıf', 200)">Sepete Ekle</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Katmer">
+            <h3>Katmer</h3>
+            <p>200 TL</p>
+            <button onclick="addToCart('Katmer', 200)">Sepete Ekle</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Dondurmalı Kızarmış Kadayıf">
+            <h3>Dondurmalı Kızarmış Kadayıf</h3>
+            <p>200 TL</p>
+            <button onclick="addToCart('Dondurmalı Kızarmış Kadayıf', 200)">Sepete Ekle</button>
+        </div></div><h2>İçecekler</h2><div class="grid">
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Ayran">
+            <h3>Ayran</h3>
+            <p>30 TL</p>
+            <button onclick="addToCart('Ayran', 30)">Sepete Ekle</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Soda">
+            <h3>Soda</h3>
+            <p>30 TL</p>
+            <button onclick="addToCart('Soda', 30)">Sepete Ekle</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Çay">
+            <h3>Çay</h3>
+            <p>20 TL</p>
+            <button onclick="addToCart('Çay', 20)">Sepete Ekle</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Türk Kahvesi">
+            <h3>Türk Kahvesi</h3>
+            <p>75 TL</p>
+            <button onclick="addToCart('Türk Kahvesi', 75)">Sepete Ekle</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Semaver">
+            <h3>Semaver</h3>
+            <p>280 TL</p>
+            <button onclick="addToCart('Semaver', 280)">Sepete Ekle</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Su">
+            <h3>Su</h3>
+            <p>15 TL</p>
+            <button onclick="addToCart('Su', 15)">Sepete Ekle</button>
+        </div></div><h2>Atıştırmalıklar</h2><div class="grid">
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Çekirdek">
+            <h3>Çekirdek</h3>
+            <p>100 TL</p>
+            <button onclick="addToCart('Çekirdek', 100)">Sepete Ekle</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Karışık Kuruyemiş">
+            <h3>Karışık Kuruyemiş</h3>
+            <p>120 TL</p>
+            <button onclick="addToCart('Karışık Kuruyemiş', 120)">Sepete Ekle</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Patates Cipsi">
+            <h3>Patates Cipsi</h3>
+            <p>80 TL</p>
+            <button onclick="addToCart('Patates Cipsi', 80)">Sepete Ekle</button>
+        </div></div>
+<h2>Günün Menüsü</h2>
+<div id="dailyMeal">
+  <p id="mealInfo">Günlük yemek servisi 12:00–13:00 arasındadır</p>
+</div>
+
+<button id="cartButton" onclick="openCart()">Sepete Git (<span id="cartCount">0</span>)</button>
+<div id="cartModal" class="modal">
+  <div class="modal-content">
+    <h2>Sepetiniz</h2>
+    <ul id="cartItems"></ul>
+    <input type="text" id="tableInput" placeholder="Masa numarası girin">
+    <div class="cart-actions">
+        <button onclick="confirmOrder()">Siparişi Onayla</button>
+        <button onclick="clearCart()">Sepeti Temizle</button>
+        <button onclick="closeCart()">Kapat</button>
+    </div>
+  </div>
+</div>
+<script src="main.js?v=5"></script>
 </body>
 </html>
